@@ -1,0 +1,256 @@
+@font-face {
+  font-family: MandanDemo;
+  src: url(font/MandanDemo-nRLvV.ttf);
+}
+
+@font-face {
+  font-family: RebellionKnight;
+  src: url(font/RebellionKnightPersonalUseO-ZV4yZ.ttf);
+}
+
+@font-face {
+  font-family: ClashDisplay;
+  src: url(font/ClashDisplay-Regular.ttf);
+}
+
+html, body {
+  scroll-behavior: smooth;
+  height: 3000px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.bdy_lft {
+  width: 50%;
+  height: 100vh;
+  background-color: #ff4000;
+  border-right: 2px solid black;
+  position: fixed;
+  overflow: hidden;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  border-bottom: 2px solid black;
+}
+
+.nav h1 {
+  font-family: RebellionKnight;
+  font-size: 25px;
+  padding-left: 5%;
+}
+
+.nav button {
+  font-family: MandanDemo;
+  font-size: 25px;
+  padding: 1%;
+  margin-right: 5%;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.bdy_lft_1 {
+  width: 100%;
+  height: 50vh;
+  font-family: MandanDemo;
+  overflow: hidden;
+}
+
+.bdy_lft_1 h1 {
+  font-size: 300px;
+  letter-spacing: 8px;
+  display: inline-block;
+  animation: marquee 8s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.bdy_lft_2 h2 {
+  font-family: ClashDisplay;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.bdy_right {
+  width: 50%;
+  margin-left: 50%;
+  height: 100vh;
+  background-color: white;
+  overflow-y: auto;
+}
+
+.bdy_right_1 h1 {
+  font-family: ClashDisplay;
+  padding: 5% 0% 2% 5%;
+  font-size: 72px;
+}
+
+.bdy_right_1_Upcoming {
+  font-family: ClashDisplay;
+  width: 90%;
+  height: 40vh;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+.hdr {
+  font-size: 48px;
+  border-bottom: 2px solid black;
+}
+
+.content {
+  font-size: 36px;
+  border-bottom: 2px solid black;
+  background-color: #ff4000;
+  display: none;
+}
+
+.artists h1 {
+  font-family: ClashDisplay;
+  padding: 25% 0% 2% 5%;
+  font-size: 72px;
+}
+
+.artists_boxes {
+  width: 90%;
+  height: 45vh;
+  margin: 0 auto;
+  font-family: ClashDisplay;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_lft_bx {
+  width: 45%;
+  height: 40vh;
+  background-color: blue;
+  background-image: url(images/img1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.top_lft_bx h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.top_right_bx {
+  width: 45%;
+  height: 40vh;
+  background-color: blue;
+  background-image: url(images/img2.webp);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.top_right_bx h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.artists_boxes2 {
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  font-family: ClashDisplay;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btm_lft_bx {
+  width: 45%;
+  height: 40vh;
+  background-color: blue;
+  background-image: url(images/img3.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.btm_lft_bx h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: black;
+  font-size: 24px;
+}
+
+.btm_right_bx {
+  width: 45%;
+  height: 40vh;
+  background-color: blue;
+  background-image: url(images/img4.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.btm_right_bx h1 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+.many {
+  font-family: ClashDisplay;
+  padding-left: 30%;
+}
+
+.arw_up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.arw_up_box {
+  background-color: black;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arw_up_box a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arw_up_box a span {
+  color: white;
+  font-size: 25px;
+}
